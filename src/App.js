@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Container, Row, Col } from "react-bootstrap";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return ( <
+        section class = "container-fluid d-flex flex-column h-100vh" >
+        <
+        header class = "flex-fill row" >
+        <
+        div class = "py-3 border align-items-center col bg-primary border-primary" >
+        <
+        h2 class = "text-center text-white" > Header < /h2>{" "} <
+        /div>{" "} <
+        /header>{" "} <
+        section class = "flex-fill row" >
+        <
+        aside class = "order-1 py-3 border   col-md-3 bg-primary border-primary" >
+        <
+        h2 class = "text-center text-white" > Sidebar1 < /h2>{" "} <
+        /aside>{" "} <
+        main class = "order-2 py-3 border  col-md-6 bg-primary border-primary" >
+        <
+        h2 class = "text-center text-white" > Main < /h2>{" "} <
+        /main>{" "} <
+        aside class = "order-3 py-3 border   col-md-3 bg-primary border-primary" >
+        <
+        h2 class = "text-center text-white" > Sidebar2 < /h2>{" "} <
+        /aside>{" "} <
+        /section>{" "} <
+        footer class = "flex-fill row" >
+        <
+        div class = "py-3 border align-items-center col bg-primary border-primary" >
+        <
+        h2 class = "text-center text-white" > Footer < /h2>{" "} <
+        /div>{" "} <
+        /footer>{" "} <
+        /section>
+    );
 }
 
 export default App;
